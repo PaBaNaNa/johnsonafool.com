@@ -1,0 +1,88 @@
+{
+  "common": {
+    "intro": "Hello I'am a software frontend developer based in Colombia.",
+    "about-title": "About me",
+    "bio-title": "Bio",
+    "portfolio-button": "My portfolio"
+  },
+  "navbar": {
+    "about": "About",
+    "works": "Works",
+    "posts": "Posts"
+  },
+  "about-me": {
+    "intro": "I'm a Frontend Developer and Multimedia Producer. I have 5 years of experience in the different stages in Web Development: planning, prototyping, Interface design and frontend development. Worked with multiple technologies, made multiple webs and apps of different industries as logistics, marketing agencies projects or fintechs.",
+    "passionate": "Likewise, I love tech and the power it has over people, that’s why I believe in continuous  learning as a philosophy, the creation of unique experiences for the user and the transformation of the world through technology.",
+    "current-job": "I currently create different web applications in React.js and Next.js. I’m open to offers as a frontend developer to improve the dev conditions and lead LATAM to be recognized for incredible products."
+  },
+  "bio": {
+    "born": "Born in Bogotá, Colombia",
+    "career": "Graduated as a multimedia producer",
+    "ondigital-job": "My first job was in Ondigital, digital marketing agency as a frontend dev ",
+    "quick-job": "Worked in Quick, logistic enterprise as a frontend dev",
+    "addi-job": "Currently, I work in ADDI, the first fintech BuyNow, PayLater, from Latam as a software frontend engineer",
+    "current-title": "to Present"
+  },
+  "works": {
+    "title": "Projects",
+    "description": "A litle compilation of some importants, challenging, personals and professionals projects, which I've made in my career.",
+    "petgram": {
+      "title": "Petgram | Petlife",
+      "copy": "The favorite social media of our pets. Made with React.js and GraphQL"
+    },
+    "servientrega": {
+      "title": "Servientrega International",
+      "copy": "Redesign the UX and improve the Architecture Information were the principal objetives behind this project"
+    }
+  },
+  "collaborations": {
+    "title": "Collabs",
+    "description": "Important projects in which I have participated",
+    "quick": {
+      "title": "Quick",
+      "copy": "Create the logistic disruption was the objetive behind of this group of technologies"
+    },
+    "addi": {
+      "title": "Addi Shop",
+      "copy": "The first startup BuyNow PayLater of Latam, the application is building the best digital shopping experience"
+    }
+  },
+  "skills": {
+    "soft": {
+      "comunication": "Asynchronous communication",
+      "adapt": "Adaptation",
+      "teamwork": "Teamwork",
+      "learning": "Continuous learning",
+      "resilience": "Resilience"
+    },
+    "hard": {
+      "basics": "HTML5, CSS3  y JavaScript",
+      "next-react": "React.js y Next.js",
+      "css": "CSS3, Styled Components, PostCSS",
+      "control-version": "Git",
+      "fundamentals": "Architectures: Hexagonal, DDD, Clean, Base",
+      "practices": "Clean Code, React Patterns, SOLID"
+    }
+  },
+  "404": {
+    "title": "404 | Not Found",
+    "message": "The page you're find don't exist",
+    "button": "Go to Home"
+  },
+  "petgram": {
+    "copy": "Petgram is a social network for pets. It's a clone of Instagram",
+    "description": " The best App for show the best pet pictures. Made in React.js, Graph.ql. The deploy was made with Zeit.js, here I applied concepts like: Hooks, Local Storage, Lazy Loading, Grapql Mutations and offline support."
+  },
+  "servientrega": {
+    "copy": "Logistic company CMS",
+    "description": "Redesign the UX and improve the Architecture Information were the principal objetives behind this project. We used WordPres as CMS, React.js as UI library for create the custome theme and Graph.ql for the backend communication"
+  },
+  "quick": {
+    "copy": "Logistic company technologies group",
+    "description": "Make part of development a serie of products that have the objetive of make easy the way for get a logistic service as last mile, carga or global service, developments made in React.js, PHP and Python"
+  },
+  "addi": {
+    "copy": "Buy Now Pay Later solutions in Latam",
+    "description": "The app make easy the digital e-commerce for all people that find a practical solution to do your shopping, the App was made in React.js, Firebase and Java in the backend."
+  }
+}

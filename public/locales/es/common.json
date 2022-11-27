@@ -1,0 +1,88 @@
+{
+  "common": {
+    "intro": "Hola, soy un software frontend engineer colombiano",
+    "about-title": "Acerca de Mi",
+    "bio-title": "Trayectoria",
+    "portfolio-button": "Mis proyectos"
+  },
+  "navbar": {
+    "about": "Acerca",
+    "works": "Proyectos",
+    "posts": "Posts"
+  },
+  "about-me": {
+    "intro": "Soy Frontend Developer y Productor Multimedia. Cuento con más de 5 años de experiencia en las diversas etapas del desarrollo web: planificación, prototipado, diseño de interfaces y desarrollo frontend en tecnologías cómo: HTML, CSS, JavaScript, React, Vue.js, recientemente Astro y Svelte. He trabajado en diferentes industrias como: logística, Marketing Agencies o fin-tech startups.",
+    "passionate": "Asimismo, amo el ecosistema tech y el poder que tiene sobre las personas, por eso creo en el aprendizaje continuo como filosofía, la creación de experiencias únicas para el usuario y la transformación del mundo a través de la tecnología.",
+    "current-job": "Actualmente creo diferentes aplicaciones web en React.js y Next.js. Estoy abierto a ofertas como desarrollador frontend con el objetivo de que LATAM sea reconocida por productos tecnológicos increíbles."
+  },
+  "bio": {
+    "born": "Nací en Bogotá, Colombia",
+    "career": "Me gradué como Tecnólogo en Producción Multimedia",
+    "ondigital-job": "Mi primer trabajo fue en Ondigital, Agencia de Marketing",
+    "quick-job": "Trabajé en Quick, empresa de logística como Frontend Developer",
+    "addi-job": "Actualmente trabajo en Addi, fintech (BuyNow PayLater), como Software Frontend Engineer, solucionando problemas relacionados con Identity Verification y Fraud ",
+    "current-title": "- Presente"
+  },
+  "works": {
+    "title": "Proyectos",
+    "description": "Un pequeño compilado de algunos proyectos en los que he tenido retos personales y profesionales.",
+    "petgram": {
+      "title": "Petgram | Petlife",
+      "copy": "La red social favorita de nuestras mascotas. Hecha con React.js y GraphQL."
+    },
+    "servientrega": {
+      "title": "Servientrega International",
+      "copy": "Rediseñar la UX y mejorar la Arquitectura de Información fueron los objetivos al hacer este proyecto."
+    }
+  },
+  "collaborations": {
+    "title": "Colaboraciones",
+    "description": "Grandes proyectos en los que he tenido la fortuna de contribuir",
+    "quick": {
+      "title": "Quick",
+      "copy": "Potenciar una plataforma para hacer logística moderna basada en tecnología en tiempo real"
+    },
+    "addi": {
+      "title": "Addi Shop",
+      "copy": "La primera aplicación de BuyNow PayLater de LATAM, un gran avance para potenciar el comercio electrónico"
+    }
+  },
+  "skills": {
+    "soft": {
+      "comunication": "Comunicación asíncrona",
+      "adapt": "Adaptación",
+      "teamwork": "Trabajo en equipo",
+      "learning": "Aprendizaje continuo",
+      "resilience": "Resiliencia"
+    },
+    "hard": {
+      "basics": "HTML5, CSS3  y JavaScript",
+      "next-react": "React.js y Next.js",
+      "css": "CSS3, Styled Components, PostCSS",
+      "control-version": "Git",
+      "fundamentals": "Arquitecturas: Hexagonal, DDD, Clean, Base",
+      "practices": "Clean Code, React Patterns, SOLID"
+    }
+  },
+  "404": {
+    "title": "404 | Página no encontrada",
+    "message": "La página que buscas no esta disponible",
+    "button": "Ir al inicio"
+  },
+  "petgram": {
+    "copy": "Petgram es la red social para mascotas, basada en Instagram",
+    "description": "Aplicación para ver las mejores fotos de mascotas. Hecha en React.js y GraphQL. El deploy se realizó en Zeit con now.js, usando los nuevos conceptos de HOOKS, construí funciones para reutilizar características como: Local Storage, Mutaciones en GrapQL, Lazy Loading - Scroll, entre otras, además de soporte offline."
+  },
+  "servientrega": {
+    "copy": "Create the CMS for this logistic company",
+    "description": "Rediseñar la Experiencia de Usuario y mejorar la Arquitectura de Información fueron los objetivos principales para mejorar la web de Servientrega International. Usamos React.js como librería de interfaz y Graph.ql como el gestor para la comunicación con el backend."
+  },
+  "quick": {
+    "copy": "Grupo de desarrollos tecnológicos",
+    "description": "Desarrollo de distintos productos que buscan facilitar los procesos logísticos como soluciones de última milla, carga o distribución urbana. Desarrollos hechos en React.js y Redux en la UI, con PHP y Python para el backend."
+  },
+  "addi": {
+    "copy": "La primera aplicación de BuyNow PayLater en Latam",
+    "description": "El App facilita el comercio digital ofreciendo nuevas alternativas de pago, hecha en React.js, Firebase y Java para el backend fue un reto interesante en mi carrera."
+  }
+}
