@@ -37,6 +37,9 @@ jobs:
       - name: Check linting
         run: npm run lint
 
+      #
+      # TODO fix test cannot be run due to jest env
+      #
       - name: Run the tests
         run: npm run test
 
