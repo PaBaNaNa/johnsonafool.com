@@ -1,3 +1,4 @@
+export { default as car } from '~/images/car.png';
 export { default as johnson } from '~/images/johnson.jpg';
 export { default as kharkiv_2d } from '~/images/kharkiv_2d.png';
 export { default as kharkiv } from '~/images/kharkiv_3d.png';

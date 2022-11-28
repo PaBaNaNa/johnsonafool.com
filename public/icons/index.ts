@@ -1,1 +1,2 @@
-export { default as django } from 'https://raw.githubusercontent.com/devicons/devicon/master/icons/django/django-original.svg';
+export { default as Tailwind } from '~/icons/Tailwind.svg';
+export { default as Vercel } from '~/icons/Vercel.svg';
