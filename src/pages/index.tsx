@@ -37,6 +37,7 @@ import {
   netflix,
   socket,
   syria,
+  taichi,
   track,
   travel,
   web,
@@ -154,11 +155,11 @@ const Home = () => {
             {t('common.exprience')}
           </Heading>
           <BioSection>
-            <BioYear>2020</BioYear>
+            <BioYear>2020 summmer</BioYear>
             Internship at Taipei Medical University AI Bio Desing Center
           </BioSection>
           <BioSection>
-            <BioYear>2022</BioYear>
+            <BioYear>2022 winter</BioYear>
             Winter School at Innusbruck University Bussiness School
           </BioSection>
           <BioSection>
@@ -168,6 +169,10 @@ const Home = () => {
           <BioSection>
             <BioYear>2022 to present</BioYear>
             MIT city science lab Taipei UROP project member
+          </BioSection>
+          <BioSection>
+            <BioYear>2022 summer</BioYear>OpenHCI event as technical and
+            software teaching assistant
           </BioSection>
         </Section>
 
@@ -293,9 +298,12 @@ const Home = () => {
           </Heading>
 
           <SimpleGrid columns={[1, 2, 2]} gap={6}>
-            <GridItem title='Volunteer' thumbnail={syria} href='./coming'>
-              Love to teach and share knowlege with others, and help people in
-              need.
+            <GridItem
+              title='International Volunteer'
+              thumbnail={syria}
+              href='./coming'
+            >
+              Love to teach others, and help people in need.
             </GridItem>
             <GridItem
               title='Activity Participation'
@@ -303,6 +311,14 @@ const Home = () => {
               href='./coming'
             >
               Explore different filed and make friends.
+            </GridItem>
+            <GridItem
+              title='Embrace Chanllenge and New Stuff'
+              thumbnail={taichi}
+              href='./coming'
+            >
+              Eager to learn new tech and share knowlege to others, especially
+              in coding and programming.
             </GridItem>
             <GridItem title='Travel' thumbnail={travel} href='./coming'>
               Take trip around the world and meet different people.

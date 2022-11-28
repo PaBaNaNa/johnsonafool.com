@@ -8,6 +8,7 @@ export { default as medical } from '~/images/medical.jpg';
 export { default as netflix } from '~/images/netflix.jpg';
 export { default as socket } from '~/images/socket.jpg';
 export { default as syria } from '~/images/syria.png';
+export { default as taichi } from '~/images/taichi.jpg';
 export { default as island } from '~/images/taiwan_island.png';
 export { default as tat } from '~/images/tat.jpg';
 export { default as track } from '~/images/track.png';
