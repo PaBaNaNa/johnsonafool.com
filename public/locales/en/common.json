@@ -1,5 +1,14 @@
 {
   "common": {
+    "name": "Hungyuan Tseng",
+    "pi": "Personel Introduction",
+    "exprience": "Exprience",
+    "csl": "City Science Project",
+    "psp": "Personel Side Project",
+    "pcp": "Programming Club Project",
+    "others": "Others",
+    "random": "Get Another Random Quote!",
+    "footer": "Hungyuan Tseng.",
     "intro": "Hello I'am a software frontend developer based in Colombia.",
     "about-title": "About me",
     "bio-title": "Bio",
