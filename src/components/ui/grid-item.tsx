@@ -22,7 +22,7 @@ export const GridItem = ({
         loading='lazy'
       />
       <LinkOverlay href={href} target='_blank'>
-        <Text mt={5} color='blue' as='u'>
+        <Text mt={5} color='green' as='u'>
           {title}
         </Text>
       </LinkOverlay>

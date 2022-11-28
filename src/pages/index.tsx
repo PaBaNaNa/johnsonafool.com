@@ -24,6 +24,7 @@ import {
 
 import { IRandomQuote } from '@/types';
 
+import { Docker, Fastapi, Git, Linux, Next, Tailwind } from '~/icons';
 import {
   car,
   island,
@@ -74,7 +75,6 @@ const Home = () => {
           <Box flexGrow={1}>
             <Heading as='h2' variant='page-title' mb={3}>
               {t('common.name')}
-              {/* <Image src={tailwind} height={100} width={100} alt='eye' /> */}
             </Heading>
             <p>"A Refreshing Rookie Currently @ MIT City Science Lab"</p>
           </Box>
@@ -107,25 +107,35 @@ const Home = () => {
 
         <Section delay={0.1}>
           <Heading mb={5} as='h3'>
-            Personel Introduction
+            {/* Personel Introduction */}
+            {t('common.pi')}
           </Heading>
           {/* MY TODO */}
           <Paragraph>
-            <b>Education:</b> National Taipei University of Technology (Taiepi
-            Tech)
+            <b> {t('pi.education-1')}:</b> National Taipei University of
+            Technology (Taiepi Tech)
           </Paragraph>
           <Paragraph>
             <b>Current:</b> Bachelor Degree & Junior Year
           </Paragraph>
           <Paragraph>
-            <b>Main Skills:</b> C, Python, Node.js, React.js, Next.js, Three.js
+            <b>Main Skills:</b> C, Python, TypeScript
           </Paragraph>
+          <div className='m-10  flex'>
+            <Next className='mt-3 text-5xl' />
+            {/* Docker, Fastapi, Git, Linux, Next */}
+            <Linux className='mt-3 text-5xl' />
+            <Git className='mt-3 text-5xl' />
+            <Fastapi className='mt-3 text-5xl' />
+            <Docker className='mt-3 text-5xl' />
+            <Tailwind className='mt-3 text-5xl' />
+          </div>
 
           {/*  */}
         </Section>
         <Section delay={0.1}>
           <Heading mb={5} as='h3'>
-            Self Promotion
+            {t('common.sp')}
           </Heading>
           {/* MY TODO */}
           <Paragraph>
@@ -141,7 +151,7 @@ const Home = () => {
 
         <Section delay={0.2}>
           <Heading mb={5} as='h3'>
-            Exprience
+            {t('common.exprience')}
           </Heading>
           <BioSection>
             <BioYear>2020</BioYear>
@@ -163,7 +173,8 @@ const Home = () => {
 
         <Section delay={0.3}>
           <Heading mb={5} as='h3'>
-            City Science Project
+            {/* City Science Project */}
+            {t('common.csl')}
           </Heading>
           <List></List>
 
@@ -187,7 +198,7 @@ const Home = () => {
               title='Object Detection and Tracking'
               thumbnail={track}
             >
-              Tensorflow lite, MobileNet, YOLO, Sort, Deepsort, Django
+              Fastapi, GraphQL, Tensorflow lite, Algorithm
             </GridItem>
             <GridItem href='coming' title='Taiwan Island' thumbnail={island}>
               React, Redux, DeckGL, Socket.io, Colyseus.js, Styled Components
@@ -197,7 +208,8 @@ const Home = () => {
 
         <Section delay={0.3}>
           <Heading mb={5} as='h3'>
-            Personel Side Project
+            {/* Personel Side Project */}
+            {t('common.psp')}
           </Heading>
 
           <SimpleGrid columns={[1, 2, 2]} gap={6}>
@@ -246,7 +258,8 @@ const Home = () => {
 
         <Section delay={0.3}>
           <Heading mb={5} as='h3'>
-            Programming Club Project
+            {/* Programming Club Project */}
+            {t('common.pcp')}
           </Heading>
 
           <SimpleGrid columns={[1, 2, 2]} gap={6}>
@@ -275,7 +288,8 @@ const Home = () => {
         </Section>
         <Section delay={0.3}>
           <Heading mb={5} as='h3'>
-            Others
+            {/* Others */}
+            {t('common.others')}
           </Heading>
 
           <SimpleGrid columns={[1, 2, 2]} gap={6}>
@@ -298,7 +312,8 @@ const Home = () => {
 
         <Box borderRadius='lg' mb={6} p={3} textAlign='center'>
           <Button onClick={generate} colorScheme='teal' mb={3}>
-            Get Another Random Quote!
+            {/* Get Another Random Quote! */}
+            {t('common.random')}
           </Button>
 
           <Heading mb={5}>
