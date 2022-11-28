@@ -74,6 +74,7 @@ const Home = () => {
             </Heading>
             <p>"A Refreshing Rookie Currently @ MIT City Science Lab"</p>
             <p> {t('common.intro')}</p>
+            <p> {t('common.about-title')}</p>
           </Box>
           <Box
             flexShrink={0}
