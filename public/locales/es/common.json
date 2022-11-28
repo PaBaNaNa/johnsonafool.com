@@ -1,5 +1,14 @@
 {
   "common": {
+    "name": "曾紘遠",
+    "pi": "cn Personel Introduction",
+    "exprience": "cn Exprience",
+    "csl": "cn City Science Project",
+    "psp": "cn Personel Side Project",
+    "pcp": "cn Programming Club Project",
+    "others": "cn Others",
+    "footer": "cn Hungyuan Tseng.",
+    "random": "cn Get Another Random Quote!",
     "intro": "Hola, soy un software frontend engineer colombiano",
     "about-title": "Acerca de Mi",
     "bio-title": "Trayectoria",

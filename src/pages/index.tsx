@@ -28,6 +28,8 @@ import {
   island,
   johnson,
   kharkiv,
+  kharkiv_2d,
+  lecture,
   linebot,
   medical,
   netflix,
@@ -64,17 +66,16 @@ const Home = () => {
     setRandomQuote(randomQuote);
     setFirst(false);
   };
+
   return (
     <Layout>
       <Container>
         <Box display={{ md: 'flex' }}>
           <Box flexGrow={1}>
             <Heading as='h2' variant='page-title' mb={3}>
-              Hungyuan Tseng
+              {t('common.name')}
             </Heading>
             <p>"A Refreshing Rookie Currently @ MIT City Science Lab"</p>
-            <p> {t('common.intro')}</p>
-            <p> {t('common.about-title')}</p>
           </Box>
           <Box
             flexShrink={0}
@@ -105,7 +106,7 @@ const Home = () => {
 
         <Section delay={0.1}>
           <Heading mb={5} as='h3'>
-            Self Promotion
+            Personel Introduction
           </Heading>
           {/* MY TODO */}
           <Paragraph>
@@ -149,31 +150,27 @@ const Home = () => {
 
           <SimpleGrid columns={[1, 2, 2]} gap={6}>
             <GridItem
-              href='https://github.com/PaBaNaNa/netflix_project'
+              href='https://incandescent-stardust-141f3a.netlify.app/posts/kharkiv'
               title='Kharkiv the Perfect World 2D'
-              thumbnail={kharkiv}
+              thumbnail={kharkiv_2d}
             >
               React, Redux, Redux-Saga, Babylon JS, Docker ...
             </GridItem>
             <GridItem
-              href='https://github.com/PaBaNaNa/netflix_project'
+              href='https://incandescent-stardust-141f3a.netlify.app/posts/kharkiv' // TODO add netfliy intro here
               title='Kharkiv the Perfect World 3D'
               thumbnail={kharkiv}
             >
               React, Redux, Redux-Saga, Babylon JS, Docker ...
             </GridItem>
             <GridItem
-              href='https://github.com/PaBaNaNa/socket_colab'
+              href='https://www.inside.com.tw/article/28677-taiwan-hitcon-peace-2022'
               title='Object Detection and Tracking'
               thumbnail={track}
             >
               Using collected data to simulate and improve traffic pheonenon
             </GridItem>
-            <GridItem
-              href='https://johnsonafool.github.io/hungyuan-homepage/'
-              title='Taiwan Island'
-              thumbnail={island}
-            >
+            <GridItem href='coming' title='Taiwan Island' thumbnail={island}>
               React, Redux, DeckGL, Colyseus JS (WebSocket based framework),
             </GridItem>
           </SimpleGrid>
@@ -186,7 +183,7 @@ const Home = () => {
 
           <SimpleGrid columns={[1, 2, 2]} gap={6}>
             <GridItem
-              href='https://github.com/PaBaNaNa/netflix_project'
+              href='https://github.com/PaBaNaNa/netflix_project' // TODO add netfliy intro here ?
               title='Netflix Project'
               thumbnail={netflix}
             >
@@ -200,7 +197,7 @@ const Home = () => {
               React, Node JS, Mongo DB
             </GridItem>
             <GridItem
-              href='https://johnsonafool.github.io/hungyuan-homepage'
+              href='https://github.com/PaBaNaNa/johnsonafool.com'
               title='johnsonafool.com'
               thumbnail={web}
 
@@ -209,7 +206,7 @@ const Home = () => {
               Next JS, Three JS, Charka UI, Github Action
             </GridItem>
             <GridItem
-              href='https://johnsonafool.github.io/hungyuan-homepage'
+              href='coming'
               title='Medical Image Segmentation'
               thumbnail={medical}
             >
@@ -229,7 +226,7 @@ const Home = () => {
               title='Club Line Chat Bot Development'
               thumbnail={linebot}
             >
-              Build a NPC chat bot via line Message API recieving 50+ users
+              Build a NPC chat bot via Django Framework recieving 50+ users
             </GridItem>
             <GridItem
               href='https://play.google.com/store/apps/details?id=club.ntut.npc.tat&hl=zh_TW&gl=US&pli=1'
@@ -239,18 +236,18 @@ const Home = () => {
               Google Docs App with React & Node JS
             </GridItem>
             <GridItem
+              href='https://www.google.com/search?q=%E3%80%90%E5%9F%BA%E7%A4%8E%E8%AA%B2%E7%A8%8B%E3%80%91Python+%E5%9F%BA%E7%A4%8E%E7%A4%BE%E8%AA%B2%EF%BC%88%E4%B8%80%EF%BC%89+%E5%90%8C%E5%AD%B8%E5%80%91%E6%9C%9F%E5%BE%85%E5%B7%B2%E4%B9%85%E7%9A%84+Python+%E7%A4%BE%E8%AA%B2%E7%B5%82%E6%96%BC%E4%BE%86%E5%95%A6%EF%BD%9E+%E6%B2%92%E6%9C%89%E5%9F%BA%E7%A4%8E%E4%B9%9F%E4%B8%8D%E8%A6%81%E6%93%94%E5%BF%83%EF%BC%8C+%E9%80%99%E6%AC%A1%E7%9A%84%E8%AA%B2%E7%A8%8B%E6%9C%83%E5%BE%9E%E9%9B%B6%E6%95%99%E8%B5%B7%EF%BC%8C+%E8%AE%93%E5%A4%A7%E5%AE%B6%E8%83%BD%E5%A4%A0%E4%B8%80%E6%AD%A5%E4%B8%80%E6%AD%A5%E9%AB%94%E9%A9%97%E5%AF%AB%E7%A8%8B%E5%BC%8F%E7%9A%84%E6%A8%82%E8%B6%A3%EF%BC%8C+%E5%B8%8C%E6%9C%9B%E5%A4%A7%E5%AE%B6%E9%83%BD%E8%83%BD%E7%8E%A9%E7%9A%84%E9%96%8B%E5%BF%83%E5%96%94%EF%BC%9D%EF%BC%B5%EF%BC%9D+%E5%8F%A6%E5%A4%96%E6%95%99%E5%AD%B8%E6%9C%9F%E9%96%93%E4%B9%9F%E6%9C%83%E7%A9%BF%E6%8F%92%E5%AF%A6%E4%BD%9C%E7%B7%B4%E7%BF%92%EF%BC%8C+%E8%AE%93%E4%BD%A0%E9%99%A4%E4%BA%86%E8%81%BD%E8%AA%B2%E4%BB%A5%E5%A4%96%EF%BC%8C+%E9%82%84%E5%8F%AF%E4%BB%A5%E5%8B%95%E6%89%8B%E5%AF%AB%E7%A8%8B%E5%BC%8F%E5%91%A6%EF%BC%81+%E3%80%90%E8%AA%B2%E7%A8%8B%E4%BB%8B%E7%B4%B9%E3%80%91+%E2%9C%85Python+%E7%92%B0%E5%A2%83%E5%BB%BA%E7%BD%AE+%E2%9C%85%E5%9F%BA%E7%A4%8E%E8%AA%9E%E6%B3%95+%E2%9C%85%E9%80%B2%E9%9A%8E%E7%B7%B4%E7%BF%92&oq=%E3%80%90%E5%9F%BA%E7%A4%8E%E8%AA%B2%E7%A8%8B%E3%80%91Python+%E5%9F%BA%E7%A4%8E%E7%A4%BE%E8%AA%B2%EF%BC%88%E4%B8%80%EF%BC%89+%E5%90%8C%E5%AD%B8%E5%80%91%E6%9C%9F%E5%BE%85%E5%B7%B2%E4%B9%85%E7%9A%84+Python+%E7%A4%BE%E8%AA%B2%E7%B5%82%E6%96%BC%E4%BE%86%E5%95%A6%EF%BD%9E+%E6%B2%92%E6%9C%89%E5%9F%BA%E7%A4%8E%E4%B9%9F%E4%B8%8D%E8%A6%81%E6%93%94%E5%BF%83%EF%BC%8C+%E9%80%99%E6%AC%A1%E7%9A%84%E8%AA%B2%E7%A8%8B%E6%9C%83%E5%BE%9E%E9%9B%B6%E6%95%99%E8%B5%B7%EF%BC%8C+%E8%AE%93%E5%A4%A7%E5%AE%B6%E8%83%BD%E5%A4%A0%E4%B8%80%E6%AD%A5%E4%B8%80%E6%AD%A5%E9%AB%94%E9%A9%97%E5%AF%AB%E7%A8%8B%E5%BC%8F%E7%9A%84%E6%A8%82%E8%B6%A3%EF%BC%8C+%E5%B8%8C%E6%9C%9B%E5%A4%A7%E5%AE%B6%E9%83%BD%E8%83%BD%E7%8E%A9%E7%9A%84%E9%96%8B%E5%BF%83%E5%96%94%EF%BC%9D%EF%BC%B5%EF%BC%9D+%E5%8F%A6%E5%A4%96%E6%95%99%E5%AD%B8%E6%9C%9F%E9%96%93%E4%B9%9F%E6%9C%83%E7%A9%BF%E6%8F%92%E5%AF%A6%E4%BD%9C%E7%B7%B4%E7%BF%92%EF%BC%8C+%E8%AE%93%E4%BD%A0%E9%99%A4%E4%BA%86%E8%81%BD%E8%AA%B2%E4%BB%A5%E5%A4%96%EF%BC%8C+%E9%82%84%E5%8F%AF%E4%BB%A5%E5%8B%95%E6%89%8B%E5%AF%AB%E7%A8%8B%E5%BC%8F%E5%91%A6%EF%BC%81+%E3%80%90%E8%AA%B2%E7%A8%8B%E4%BB%8B%E7%B4%B9%E3%80%91+%E2%9C%85Python+%E7%92%B0%E5%A2%83%E5%BB%BA%E7%BD%AE+%E2%9C%85%E5%9F%BA%E7%A4%8E%E8%AA%9E%E6%B3%95+%E2%9C%85%E9%80%B2%E9%9A%8E%E7%B7%B4%E7%BF%92&aqs=chrome..69i57.291j0j7&sourceid=chrome&ie=UTF-8'
+              title='Lecturer'
+              thumbnail={lecture}
+            >
+              Being Lecturer in Club Python Course
+            </GridItem>
+            <GridItem
               href='https://hi-in.facebook.com/NPC.OwO/posts/5901022323275410/'
               title='Event Final Picture'
               thumbnail={welcome}
             >
-              Organize and host welcoming event with 70+ people in sucess.
-            </GridItem>
-            <GridItem
-              href='https://hi-in.facebook.com/NPC.OwO/posts/5901022323275410/'
-              title='Lecturer'
-              thumbnail={welcome}
-            >
-              Lecturer in Club Course to ...
+              Organize and host welcoming event with 70+ people in sucess
             </GridItem>
           </SimpleGrid>
         </Section>
@@ -260,13 +257,17 @@ const Home = () => {
           </Heading>
 
           <SimpleGrid columns={[1, 2, 2]} gap={6}>
-            <GridItem title='Volunteer' thumbnail={syria}>
+            <GridItem title='Volunteer' thumbnail={syria} href='./coming'>
               Love to teach others, and help people in need.
             </GridItem>
-            <GridItem title='Activity Participation' thumbnail={workshop}>
+            <GridItem
+              title='Activity Participation'
+              thumbnail={workshop}
+              href='./coming'
+            >
               Explore different filed and make friends.
             </GridItem>
-            <GridItem title='Travel' thumbnail={travel}>
+            <GridItem title='Travel' thumbnail={travel} href='./coming'>
               Take trip around the world and meet different people.
             </GridItem>
           </SimpleGrid>

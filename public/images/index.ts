@@ -1,5 +1,7 @@
 export { default as johnson } from '~/images/johnson.jpg';
+export { default as kharkiv_2d } from '~/images/kharkiv_2d.png';
 export { default as kharkiv } from '~/images/kharkiv_3d.png';
+export { default as lecture } from '~/images/lecture.png';
 export { default as linebot } from '~/images/linebot.jpg';
 export { default as medical } from '~/images/medical.jpg';
 export { default as netflix } from '~/images/netflix.jpg';

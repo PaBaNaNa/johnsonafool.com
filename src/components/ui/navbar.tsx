@@ -124,7 +124,7 @@ const Navbar = (props: any) => {
           </LinkItem>
           <NextLink href='/' locale={router.locale === 'es' ? 'en' : 'es'}>
             <Button colorScheme='teal' size='xs'>
-              {router.locale === 'es' ? 'EN' : 'ES'}
+              {router.locale === 'es' ? 'EN' : '中'}
             </Button>
           </NextLink>
         </Stack>
@@ -168,7 +168,7 @@ const Navbar = (props: any) => {
                 </MenuItem>
                 <NextLink
                   href='/'
-                  locale={router.locale === 'es' ? 'en' : 'es'}
+                  locale={router.locale === 'es' ? 'en' : 'es'} // TODO: responsive in mobile
                   passHref
                 >
                   <MenuItem as={Link}>
