@@ -173,7 +173,7 @@ const Navbar = (props: any) => {
                 >
                   <MenuItem as={Link}>
                     <Button colorScheme='teal' size='sm'>
-                      {router.locale === 'es' ? 'English' : 'Español'}
+                      {router.locale === 'es' ? 'English' : '中文'}
                     </Button>
                   </MenuItem>
                 </NextLink>
