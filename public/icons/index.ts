@@ -1,9 +1,15 @@
-export { default as C } from '~/icons/C.svg';
+// export { default as C } from '~/icons/C.svg';
 export { default as Docker } from '~/icons/Docker.svg';
 export { default as Fastapi } from '~/icons/Fastapi.svg';
 export { default as Git } from '~/icons/Git.svg';
+export { default as Graphql } from '~/icons/Graphql.svg';
 export { default as Linux } from '~/icons/Linux.svg';
 export { default as Mongo } from '~/icons/Mongodb.svg';
+export { default as Mysql } from '~/icons/Mysql.svg';
 export { default as Next } from '~/icons/Nextjs.svg';
-export { default as Tailwind } from '~/icons/Tailwind.svg';
+export { default as React } from '~/icons/React.svg';
+export { default as Socketio } from '~/icons/Socketio.svg';
+export { default as Tailwind } from '~/icons/Tailwindcss.svg';
+export { default as Tensorflow } from '~/icons/Tensorflow.svg';
+export { default as Threejs } from '~/icons/Threejs.svg';
 export { default as Vercel } from '~/icons/Vercel.svg';
