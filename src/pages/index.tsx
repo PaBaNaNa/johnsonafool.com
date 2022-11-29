@@ -11,7 +11,6 @@ import axios from 'axios';
 import Image from 'next/image';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { useEffect, useState } from 'react';
-import { useTranslation } from 'react-i18next';
 
 import Layout from '@/components/layout/Layout';
 import {
@@ -64,7 +63,7 @@ const ProfileImage = chakra(Image, {
 });
 
 const Home = () => {
-  const { t } = useTranslation('common');
+  // const { t } = useTranslation('common');
   const [quotes, setQuotes] = useState<any>();
   const [randomQuote, setRandomQuote] = useState<IRandomQuote>({});
   const [first, setFirst] = useState(true);
@@ -89,7 +88,7 @@ const Home = () => {
         <Box display={{ md: 'flex' }}>
           <Box flexGrow={1}>
             <Heading as='h2' variant='page-title' mb={3}>
-              {t('common.name')}
+              {/* {t('common.name')} */}
             </Heading>
             <p>"A Refreshing Rookie Currently @ MIT City Science Lab"</p>
           </Box>
@@ -123,21 +122,19 @@ const Home = () => {
         <Section delay={0.1}>
           <Heading mb={5} as='h3'>
             {/* Personel Introduction */}
-            {t('common.pi')}
+            {/* {t('common.pi')} */}
           </Heading>
           {/* MY TODO */}
           <p>
-            <b> {t('pi.education-1')}:</b> National Taipei University of
+            {/* <b> {t('pi.education-1')}:</b> National Taipei University of */}
             Technology (Taiepi Tech)
           </p>
-          <b>{t('pi.current-1')}:</b> Bachelor Degree & Junior Year
+          {/* <b>{t('pi.current-1')}:</b> Bachelor Degree & Junior Year */}
           <p>
-            <b>{t('pi.main-skills-1')}:</b> C, C#, Python, TypeScript, SQL
+            {/* <b>{t('pi.main-skills-1')}:</b> C, C#, Python, TypeScript, SQL */}
             (Database)
           </p>
-          <p>
-            <b>{t('pi.tech')}:</b>
-          </p>
+          <p>{/* <b>{t('pi.tech')}:</b> */}</p>
           <Paragraph className='m-3 flex bg-slate-50'>
             <Docker className='m-3 text-7xl' />{' '}
             <Fastapi className='m-3 text-7xl' />{' '}
@@ -160,7 +157,7 @@ const Home = () => {
         </Section>
         <Section delay={0.1}>
           <Heading mb={5} as='h3'>
-            {t('common.sp')}
+            {/* {t('common.sp')} */}
           </Heading>
           {/* MY TODO */}
           <Paragraph>
@@ -176,7 +173,7 @@ const Home = () => {
 
         <Section delay={0.2}>
           <Heading mb={5} as='h3'>
-            {t('common.exprience')}
+            {/* {t('common.exprience')} */}
           </Heading>
           <BioSection>
             <BioYear>2020 summmer</BioYear>
@@ -208,7 +205,7 @@ const Home = () => {
         <Section delay={0.3}>
           <Heading mb={5} as='h3'>
             {/* City Science Project */}
-            {t('common.csl')}
+            {/* {t('common.csl')} */}
           </Heading>
           <List></List>
 
@@ -243,7 +240,7 @@ const Home = () => {
         <Section delay={0.3}>
           <Heading mb={5} as='h3'>
             {/* Personel Side Project */}
-            {t('common.psp')}
+            {/* {t('common.psp')} */}
           </Heading>
 
           <SimpleGrid columns={[1, 2, 2]} gap={6}>
@@ -293,7 +290,7 @@ const Home = () => {
         <Section delay={0.3}>
           <Heading mb={5} as='h3'>
             {/* Programming Club Project */}
-            {t('common.pcp')}
+            {/* {t('common.pcp')} */}
           </Heading>
 
           <SimpleGrid columns={[1, 2, 2]} gap={6}>
@@ -323,7 +320,7 @@ const Home = () => {
         <Section delay={0.3}>
           <Heading mb={5} as='h3'>
             {/* Others */}
-            {t('common.others')}
+            {/* {t('common.others')} */}
           </Heading>
 
           <SimpleGrid columns={[1, 2, 2]} gap={6}>
@@ -358,7 +355,7 @@ const Home = () => {
         <Box borderRadius='lg' mb={6} p={3} textAlign='center'>
           <Button onClick={generate} colorScheme='teal' mb={3}>
             {/* Get Another Random Quote! */}
-            {t('common.random')}
+            {/* {t( s'common.random')} */}
           </Button>
 
           <Heading mb={5}>
