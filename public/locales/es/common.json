@@ -11,13 +11,17 @@
     "footer": "曾紘遠",
     "random": "再來一句隨機的名言吧！"
   },
+  "nav": {
+    "tech-blog": "技術文章 (Coming Soon!)"
+  },
   "pi": {
     "education-1": "學歷",
     "education-2": "cn National Taipei University of Technology (Taiepi Tech)",
-    "current-1": "cn Current",
+    "current-1": "現在",
     "current-2": "cn Bachelor Degree & Junior Year",
-    "main-skills-1": "cn Main Skills",
-    "main-skills-2": "cn C, Python, Node.js, React.js, Next.js, Three.js"
+    "main-skills-1": "主要使用語言",
+    "main-skills-2": "cn C, Python, Node.js, React.js, Next.js, Three.js",
+    "tech": "熟悉技術"
   },
 
   "si": {

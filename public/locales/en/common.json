@@ -11,13 +11,17 @@
     "footer": "Hungyuan Tseng.",
     "random": "Get Another Random Quote!"
   },
+  "nav": {
+    "tech-blog": "Tech Blog (Coming Soon!)"
+  },
   "pi": {
     "education-1": "Education",
     "education-2": "National Taipei University of Technology (Taiepi Tech)",
     "current-1": "Current",
     "current-2": "Bachelor Degree & Junior Year",
-    "main-skills-1": "Main Skills",
-    "main-skills-2": "C, Python, Node.js, React.js, Next.js, Three.js"
+    "main-skills-1": "Main Skilled Language",
+    "main-skills-2": "C, Python, Node.js, React.js, Next.js, Three.js",
+    "tech": "Technology Familiar With"
   },
 
   "si": {

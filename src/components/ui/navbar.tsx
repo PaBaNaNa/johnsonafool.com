@@ -14,6 +14,7 @@ import {
 } from '@chakra-ui/react';
 import NextLink from 'next/link';
 import { useRouter } from 'next/router';
+import { useTranslation } from 'react-i18next';
 import { IoLogoGithub, IoLogoLinkedin, IoLogoMedium } from 'react-icons/io5';
 
 import ThemeToggleButton from './theme-toggle-button';
@@ -47,6 +48,7 @@ const LinkItem = ({
 const Navbar = (props: any) => {
   const { path } = props;
   const router = useRouter();
+  const { t } = useTranslation('common');
 
   return (
     <Box
@@ -120,7 +122,7 @@ const Navbar = (props: any) => {
             pl={2}
           >
             <IoLogoMedium />
-            Tech Blog (See You Soon!)
+            {t('nav.tech-blog')}
           </LinkItem>
           <NextLink href='/' locale={router.locale === 'es' ? 'en' : 'es'}>
             <Button colorScheme='teal' size='xs'>

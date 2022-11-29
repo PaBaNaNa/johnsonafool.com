@@ -24,7 +24,21 @@ import {
 
 import { IRandomQuote } from '@/types';
 
-import { Docker, Fastapi, Git, Linux, Next, Tailwind } from '~/icons';
+import {
+  Docker,
+  Fastapi,
+  Git,
+  Graphql,
+  Linux,
+  Mongo,
+  Mysql,
+  Next,
+  React,
+  Socketio,
+  Tailwind,
+  Tensorflow,
+  Threejs,
+} from '~/icons';
 import {
   car,
   island,
@@ -112,27 +126,37 @@ const Home = () => {
             {t('common.pi')}
           </Heading>
           {/* MY TODO */}
-          <Paragraph>
+          <p>
             <b> {t('pi.education-1')}:</b> National Taipei University of
             Technology (Taiepi Tech)
+          </p>
+          <b>{t('pi.current-1')}:</b> Bachelor Degree & Junior Year
+          <p>
+            <b>{t('pi.main-skills-1')}:</b> C, C#, Python, TypeScript, SQL
+            (Database)
+          </p>
+          <p>
+            <b>{t('pi.tech')}:</b>
+          </p>
+          <Paragraph className='m-3 flex bg-slate-50'>
+            <Docker className='m-3 text-7xl' />{' '}
+            <Fastapi className='m-3 text-7xl' />{' '}
+            <Git className='m-3 text-7xl' />{' '}
+            <Graphql className='m-3 text-7xl' />
+            <Linux className='m-3 text-7xl' />
           </Paragraph>
-          <Paragraph>
-            <b>Current:</b> Bachelor Degree & Junior Year
+          <Paragraph className='m-3 flex bg-slate-50'>
+            <Mongo className='m-3 text-7xl' />
+            <Mysql className='m-3 text-7xl' />
+            <Next className='m-3 text-7xl' />
+            <React className='m-3 text-7xl' />
+            <Threejs className='m-3 text-7xl' />
           </Paragraph>
-          <Paragraph>
-            <b>Main Skills:</b> C, Python, TypeScript
+          <Paragraph className='m-3 flex bg-gray-50 '>
+            <Socketio className='m-3 text-7xl' />
+            <Tailwind className='m-3 text-7xl' />
+            <Tensorflow className='m-3 text-7xl' />
           </Paragraph>
-          <div className='m-10  flex'>
-            <Next className='mt-3 text-5xl' />
-            {/* Docker, Fastapi, Git, Linux, Next */}
-            <Linux className='mt-3 text-5xl' />
-            <Git className='mt-3 text-5xl' />
-            <Fastapi className='mt-3 text-5xl' />
-            <Docker className='mt-3 text-5xl' />
-            <Tailwind className='mt-3 text-5xl' />
-          </div>
-
-          {/*  */}
         </Section>
         <Section delay={0.1}>
           <Heading mb={5} as='h3'>
@@ -162,17 +186,22 @@ const Home = () => {
             <BioYear>2022 winter</BioYear>
             Winter School at Innusbruck University Bussiness School
           </BioSection>
+
           <BioSection>
-            <BioYear>2022 to present</BioYear>
-            President of programming club at school
-          </BioSection>
-          <BioSection>
-            <BioYear>2022 to present</BioYear>
-            MIT city science lab Taipei UROP project member
+            <BioYear>2022 spring</BioYear>Appworks school software developer
+            trainee
           </BioSection>
           <BioSection>
             <BioYear>2022 summer</BioYear>OpenHCI event as technical and
             software teaching assistant
+          </BioSection>
+          <BioSection>
+            <BioYear>2022 to present</BioYear>
+            MIT City Science Lab @ Taipei UROP project member
+          </BioSection>
+          <BioSection>
+            <BioYear>2022 to present</BioYear>
+            President of programming club at school
           </BioSection>
         </Section>
 
@@ -189,7 +218,7 @@ const Home = () => {
               title='Kharkiv the Perfect World 2D'
               thumbnail={kharkiv_2d}
             >
-              React, Redux, Redux Saga, DeckGL, Docker
+              React, Redux, Redux Saga, DeckGL, Django, Docker
             </GridItem>
             <GridItem
               href='https://incandescent-stardust-141f3a.netlify.app/posts/kharkiv' // TODO add netfliy intro here
@@ -203,7 +232,7 @@ const Home = () => {
               title='Object Detection and Tracking'
               thumbnail={track}
             >
-              Fastapi, GraphQL, Tensorflow lite, Algorithm
+              Fastapi, GraphQL, Tensorflow, Algorithm
             </GridItem>
             <GridItem href='coming' title='Taiwan Island' thumbnail={island}>
               React, Redux, DeckGL, Socket.io, Colyseus.js, Styled Components
@@ -243,20 +272,20 @@ const Home = () => {
             </GridItem>
             <GridItem
               href='coming'
-              title='Medical Image Segmentation'
-              thumbnail={medical}
+              title='Personel Web Porttfolio'
+              thumbnail={web}
             >
-              Python, Tensorflow, UNet, FastAPI, MLops
+              Personel Web Porttfolio
             </GridItem>
             <GridItem href='coming' title='Arduino' thumbnail={car}>
               C, Arduino
             </GridItem>
             <GridItem
               href='coming'
-              title='Personel Web Porttfolio'
+              title='Medical Image Segmentation'
               thumbnail={medical}
             >
-              Personel Web Porttfolio
+              Python, Tensorflow, UNet, FastAPI, MLops
             </GridItem>
           </SimpleGrid>
         </Section>
