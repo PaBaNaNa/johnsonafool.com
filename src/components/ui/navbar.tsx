@@ -15,7 +15,12 @@ import {
 import NextLink from 'next/link';
 import { useRouter } from 'next/router';
 import { useTranslation } from 'react-i18next';
-import { IoLogoGithub, IoLogoLinkedin, IoLogoMedium } from 'react-icons/io5';
+import {
+  IoBook,
+  IoLogoGithub,
+  IoLogoLinkedin,
+  IoLogoMedium,
+} from 'react-icons/io5';
 
 import ThemeToggleButton from './theme-toggle-button';
 
@@ -124,6 +129,18 @@ const Navbar = (props: any) => {
             <IoLogoMedium />
             {t('nav.tech-blog')}
           </LinkItem>
+          <LinkItem
+            target='_blank'
+            href='https://medium.com/@good_orchid_elephant_483'
+            path={path}
+            display='inline-flex'
+            alignItems='center'
+            style={{ gap: 4 }}
+            pl={2}
+          >
+            <IoBook />
+            CV Resumé
+          </LinkItem>
           <NextLink href='/' locale={router.locale === 'es' ? 'en' : 'es'}>
             <Button colorScheme='teal' size='xs'>
               {router.locale === 'es' ? 'EN' : '中'}
@@ -146,13 +163,11 @@ const Navbar = (props: any) => {
                 <NextLink href='/' passHref>
                   <MenuItem as={Link}>About</MenuItem>
                 </NextLink>
-                <NextLink href='/works' passHref>
-                  <MenuItem as={Link}>Works</MenuItem>
-                </NextLink>
-                <NextLink href='/posts' passHref>
+                {/* TODO add posts page in futre */}
+                <NextLink href='/coming' passHref>
                   <MenuItem as={Link}>Posts</MenuItem>
                 </NextLink>
-
+                {/*  */}
                 <MenuItem as={Link} href='https://github.com/johnsonafool'>
                   Github
                 </MenuItem>

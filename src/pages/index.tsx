@@ -4,7 +4,6 @@ import {
   chakra,
   Container,
   Heading,
-  List,
   SimpleGrid,
 } from '@chakra-ui/react';
 import axios from 'axios';
@@ -17,28 +16,16 @@ import Layout from '@/components/layout/Layout';
 import {
   BioSection,
   BioYear,
+  DefaultParagraph,
   GridItem,
   Paragraph,
   Section,
 } from '@/components/ui';
+import { Devicon } from '@/components/ui/devicon';
 
 import { IRandomQuote } from '@/types';
 
-import {
-  Docker,
-  Fastapi,
-  Git,
-  Graphql,
-  Linux,
-  Mongo,
-  Mysql,
-  Next,
-  React,
-  Socketio,
-  Tailwind,
-  Tensorflow,
-  Threejs,
-} from '~/icons';
+import { React } from '~/icons';
 import {
   car,
   island,
@@ -49,6 +36,7 @@ import {
   linebot,
   medical,
   netflix,
+  portfolio,
   socket,
   syria,
   taichi,
@@ -66,8 +54,10 @@ const ProfileImage = chakra(Image, {
 const Home = () => {
   const { t } = useTranslation('common');
   const [quotes, setQuotes] = useState<any>();
-  const [randomQuote, setRandomQuote] = useState<IRandomQuote>({});
-  const [first, setFirst] = useState(true);
+  const [randomQuote, setRandomQuote] = useState<IRandomQuote>({
+    author: 'Elon Musk',
+    text: 'I think it is possible for ordinary people to choose to be extraordinary',
+  });
 
   useEffect(() => {
     axios.get('https://type.fit/api/quotes').then((response) => {
@@ -80,7 +70,6 @@ const Home = () => {
     const randomNumber = Math.floor(Math.random() * 1643);
     const randomQuote = quotes[randomNumber];
     setRandomQuote(randomQuote);
-    setFirst(false);
   };
 
   return (
@@ -119,61 +108,46 @@ const Home = () => {
             </Box>
           </Box>
         </Box>
-
         <Section delay={0.1}>
           <Heading mb={5} as='h3'>
             {/* Personel Introduction */}
             {t('common.pi')}
           </Heading>
           {/* MY TODO */}
-          <p>
+          <DefaultParagraph>
             <b> {t('pi.education-1')}:</b> National Taipei University of
             Technology (Taiepi Tech)
-          </p>
+          </DefaultParagraph>
           <b>{t('pi.current-1')}:</b> Bachelor Degree & Junior Year
-          <p>
+          <DefaultParagraph>
             <b>{t('pi.main-skills-1')}:</b> C, C#, Python, TypeScript, SQL
             (Database)
-          </p>
-          <p>
+          </DefaultParagraph>
+          <DefaultParagraph>
             <b>{t('pi.tech')}:</b>
-          </p>
-          <Paragraph className='m-3 flex bg-slate-50'>
-            <Docker className='m-3 text-7xl' />{' '}
-            <Fastapi className='m-3 text-7xl' />{' '}
-            <Git className='m-3 text-7xl' />{' '}
-            <Graphql className='m-3 text-7xl' />
-            <Linux className='m-3 text-7xl' />
-          </Paragraph>
-          <Paragraph className='m-3 flex bg-slate-50'>
-            <Mongo className='m-3 text-7xl' />
-            <Mysql className='m-3 text-7xl' />
-            <Next className='m-3 text-7xl' />
-            <React className='m-3 text-7xl' />
-            <Threejs className='m-3 text-7xl' />
-          </Paragraph>
-          <Paragraph className='m-3 flex bg-gray-50 '>
-            <Socketio className='m-3 text-7xl' />
-            <Tailwind className='m-3 text-7xl' />
-            <Tensorflow className='m-3 text-7xl' />
-          </Paragraph>
+          </DefaultParagraph>
+          <Devicon />
         </Section>
+        <Section delay={0.1}>{/* <Devicon /> */}</Section>
         <Section delay={0.1}>
           <Heading mb={5} as='h3'>
             {t('common.sp')}
           </Heading>
+
           {/* MY TODO */}
-          <Paragraph>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Integer
-            feugiat scelerisque varius morbi enim nunc faucibus a. Diam volutpat
-            commodo sed egestas egestas fringilla phasellus faucibus
-            scelerisque. Ultricies lacus sed turpis tincidunt id aliquet risus
-            feugiat. Convallis aenean et tortor at risus viverra adipiscing at.
+          <Paragraph className='ml-1 inline-block w-[200px]'>
+            <span className='block truncate '>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Integer feugiat scelerisque varius morbi enim nunc faucibus a.
+              Diam volutpat commodo sed egestas egestas fringilla phasellus
+              faucibus scelerisque. Ultricies lacus sed turpis tincidunt id
+              aliquet risus feugiat. Convallis aenean et tortor at risus viverra
+              adipiscing at.
+            </span>
           </Paragraph>
           {/*  */}
         </Section>
-
         <Section delay={0.2}>
           <Heading mb={5} as='h3'>
             {t('common.exprience')}
@@ -204,13 +178,11 @@ const Home = () => {
             President of programming club at school
           </BioSection>
         </Section>
-
         <Section delay={0.3}>
           <Heading mb={5} as='h3'>
             {/* City Science Project */}
             {t('common.csl')}
           </Heading>
-          <List></List>
 
           <SimpleGrid columns={[1, 2, 2]} gap={6}>
             <GridItem
@@ -239,7 +211,6 @@ const Home = () => {
             </GridItem>
           </SimpleGrid>
         </Section>
-
         <Section delay={0.3}>
           <Heading mb={5} as='h3'>
             {/* Personel Side Project */}
@@ -271,11 +242,11 @@ const Home = () => {
               Next JS, Three JS, Github Action, Tailwind CSS
             </GridItem>
             <GridItem
-              href='coming'
-              title='Personel Web Porttfolio'
-              thumbnail={web}
+              href='https://main--super-semifreddo-943d54.netlify.app/'
+              title='Johnsons Porttfolio'
+              thumbnail={portfolio}
             >
-              Personel Web Porttfolio
+              Astro, Netlify, mdx,
             </GridItem>
             <GridItem href='coming' title='Arduino' thumbnail={car}>
               C, Arduino
@@ -289,7 +260,6 @@ const Home = () => {
             </GridItem>
           </SimpleGrid>
         </Section>
-
         <Section delay={0.3}>
           <Heading mb={5} as='h3'>
             {/* Programming Club Project */}
@@ -354,19 +324,15 @@ const Home = () => {
             </GridItem>
           </SimpleGrid>
         </Section>
-
         <Box borderRadius='lg' mb={6} p={3} textAlign='center'>
           <Button onClick={generate} colorScheme='teal' mb={3}>
             {/* Get Another Random Quote! */}
             {t('common.random')}
           </Button>
 
-          <Heading mb={5}>
-            {first
-              ? 'I think it is possible for ordinary people to choose to be extraordinary'
-              : randomQuote.text}
-          </Heading>
-          <div>- {first ? 'Elon Musk' : randomQuote?.author}</div>
+          <Heading mb={5}>{randomQuote.text}</Heading>
+          <div>- {randomQuote?.author}</div>
+          <div>from https://type.fit/api/quotes</div>
         </Box>
       </Container>
     </Layout>

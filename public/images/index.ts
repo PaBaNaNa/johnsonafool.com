@@ -6,6 +6,7 @@ export { default as lecture } from '~/images/lecture.png';
 export { default as linebot } from '~/images/linebot.jpg';
 export { default as medical } from '~/images/medical.jpg';
 export { default as netflix } from '~/images/netflix.jpg';
+export { default as portfolio } from '~/images/portfolio.png';
 export { default as socket } from '~/images/socket.jpg';
 export { default as syria } from '~/images/syria.png';
 export { default as taichi } from '~/images/taichi.jpg';
