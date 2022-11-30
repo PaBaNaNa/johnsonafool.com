@@ -29,11 +29,6 @@
     "src/pages/pdf.tsx"
   ],
   // TODO fix ts check error instead of ignoring
-  "exclude": [
-    "node_modules",
-    "src/icons/index.ts",
-    "src/images/index.ts",
-    "src/pages/pdf.tsx"
-  ],
+  "exclude": ["node_modules", "src/pages/pdf.tsx"],
   "moduleResolution": ["node_modules", ".next", "node"]
 }
