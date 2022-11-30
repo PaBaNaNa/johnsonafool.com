@@ -19,6 +19,7 @@ interface DeviconProps {
   icon?: any;
 }
 
+// eslint-disable-next-line unused-imports/no-unused-vars
 export const Devicon = ({ name }: DeviconProps) => {
   return (
     <>
