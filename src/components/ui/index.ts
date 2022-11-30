@@ -1,5 +1,6 @@
 export * from '@/components/ui/bio';
 export * from '@/components/ui/chakra';
+export * from '@/components/ui/devicon';
 export * from '@/components/ui/fonts';
 export * from '@/components/ui/footer';
 export * from '@/components/ui/grid-item';

@@ -25,7 +25,8 @@
     "**/*.ts",
     "**/*.tsx",
     "src/pages/404.jsx",
-    "src/pages/404.jsx"
+    "src/pages/404.jsx",
+    "src/pages/pdf.tsx"
   ],
   "exclude": ["node_modules"],
   "moduleResolution": ["node_modules", ".next", "node"]

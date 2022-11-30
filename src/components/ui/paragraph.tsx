@@ -6,4 +6,6 @@ export const Paragraph = styled.p`
   hyphens: auto;
 `;
 
+export const DefaultParagraph = styled.p``;
+
 export default Paragraph;
