@@ -25,7 +25,6 @@ import { Devicon } from '@/components/ui/devicon';
 
 import { IRandomQuote } from '@/types';
 
-import { React } from '~/icons';
 import {
   car,
   island,

@@ -28,6 +28,6 @@
     "src/pages/404.jsx",
     "src/pages/pdf.tsx"
   ],
-  "exclude": ["node_modules"],
+  "exclude": ["node_modules", "src/pages/pdf.tsx"],
   "moduleResolution": ["node_modules", ".next", "node"]
 }
