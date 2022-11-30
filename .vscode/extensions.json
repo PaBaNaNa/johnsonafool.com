@@ -1,7 +1,7 @@
 {
   "recommendations": [
-    "arcanis.vscode-zipfs",
-    "dbaeumer.vscode-eslint", // Tailwind CSS Intellisense
+    // "arcanis.vscode-zipfs",
+    "dbaeumer.vscode-eslint",
     "bradlc.vscode-tailwindcss",
     "esbenp.prettier-vscode",
     "dbaeumer.vscode-eslint",
