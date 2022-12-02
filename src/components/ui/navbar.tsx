@@ -81,20 +81,9 @@ const Navbar = (props: any) => {
           flexGrow={1}
           mt={{ base: 4, md: 0 }}
         >
-          <LinkItem href='/works' path={path}>
-            {/* Homepage */}
-          </LinkItem>
-          <LinkItem href='/works' path={path}>
-            {/* Works */}
-          </LinkItem>
-          {/* TODO: substitue this link with like anohter netlify app? */}
-          <LinkItem href='/posts' path={path}>
-            {/* Posts */}
-          </LinkItem>
-          <LinkItem href='https://uses.craftz.dog/'></LinkItem>
           <LinkItem
             target='_blank'
-            href='https://github.com/johnsonafool'
+            href='https://github.com/PaBaNaNa/johnsonafool.com'
             path={path}
             display='inline-flex'
             alignItems='center'
@@ -102,7 +91,7 @@ const Navbar = (props: any) => {
             pl={2}
           >
             <IoLogoGithub />
-            Github
+            Source
           </LinkItem>
           <LinkItem
             target='_blank'
@@ -131,7 +120,7 @@ const Navbar = (props: any) => {
           </LinkItem>
           <LinkItem
             target='_blank'
-            href='https://medium.com/@good_orchid_elephant_483'
+            href='https://drive.google.com/file/d/1aiK-gcqbuPGI3XfNSwpv_spaP6p0myk-/view?usp=share_link'
             path={path}
             display='inline-flex'
             alignItems='center'

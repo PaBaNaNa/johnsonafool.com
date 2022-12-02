@@ -18,7 +18,6 @@ import {
   BioYear,
   DefaultParagraph,
   GridItem,
-  Paragraph,
   Section,
 } from '@/components/ui';
 import { Devicon } from '@/components/ui/devicon';
@@ -127,13 +126,11 @@ const Home = () => {
           </DefaultParagraph>
           <Devicon />
         </Section>
-        <Section delay={0.1}>{/* <Devicon /> */}</Section>
-        <Section delay={0.1}>
+        {/* <Section delay={0.1}>
           <Heading mb={5} as='h3'>
             {t('common.sp')}
           </Heading>
 
-          {/* MY TODO */}
           <Paragraph className='ml-1 inline-block w-[200px]'>
             <span className='block truncate '>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -145,8 +142,7 @@ const Home = () => {
               adipiscing at.
             </span>
           </Paragraph>
-          {/*  */}
-        </Section>
+        </Section> */}
         <Section delay={0.2}>
           <Heading mb={5} as='h3'>
             {t('common.exprience')}
