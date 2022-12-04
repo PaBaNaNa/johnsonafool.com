@@ -2,7 +2,7 @@
 
 Feel free to click the link and visit my website
 
-[johnsonafool.com.](https://johnsonafool-com.vercel.app/en)
+[johnsonafool.com](https://johnsonafool-com.vercel.app/en)
 
 ### TODO for this webiste
 
