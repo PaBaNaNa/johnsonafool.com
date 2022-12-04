@@ -1,6 +1,8 @@
 # Johnsons Personal Introduction Website
 
-johnsonafool-com.vercel.app
+Feel free to click the link and visit my website
+
+[johnsonafool.com](https://johnsonafool-com.vercel.app/en)
 
 ### TODO for this webiste
 
@@ -11,3 +13,4 @@ johnsonafool-com.vercel.app
 - [x] add renovator bot
 - [ ] add test include e2e, unit, integraion, storybook etc
 - [ ] renew some link
+- [ ] resolve hydration error shown on dev
