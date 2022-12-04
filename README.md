@@ -1,3 +1,7 @@
+# Johnsons Personal Introduction Website
+
+johnsonafool-com.vercel.app
+
 ### TODO for this webiste
 
 - [x] add i18n
