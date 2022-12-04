@@ -116,7 +116,7 @@ const Home = () => {
             <b> {t('pi.education-1')}:</b> National Taipei University of
             Technology (Taiepi Tech)
           </DefaultParagraph>
-          <b>{t('pi.current-1')}:</b> Bachelor Degree & Junior Year
+          <b>{t('pi.current-1')}:</b> Bachelor Degree, Junior Year
           <DefaultParagraph>
             <b>{t('pi.main-skills-1')}:</b> C, C#, Python, TypeScript, SQL
             (Database)
@@ -148,28 +148,28 @@ const Home = () => {
             {t('common.exprience')}
           </Heading>
           <BioSection>
-            <BioYear>2020 summmer</BioYear>
-            Internship at Taipei Medical University AI Bio Desing Center
+            <BioYear>2020 Summer</BioYear>
+            Internship at Taipei Medical University AI Bio Design Center
           </BioSection>
           <BioSection>
-            <BioYear>2022 winter</BioYear>
-            Winter School at Innusbruck University Bussiness School
+            <BioYear>2022 Winter</BioYear>
+            Winter School at Innsbruck University Bushiness School
           </BioSection>
 
           <BioSection>
-            <BioYear>2022 spring</BioYear>Appworks school software developer
+            <BioYear>2022 Spring</BioYear>Appworks school software developer
             trainee
           </BioSection>
           <BioSection>
-            <BioYear>2022 summer</BioYear>OpenHCI event as technical and
+            <BioYear>2022 Summer</BioYear>OpenHCI event as technical and
             software teaching assistant
           </BioSection>
           <BioSection>
-            <BioYear>2022 to present</BioYear>
+            <BioYear>2022 - Present</BioYear>
             MIT City Science Lab @ Taipei UROP project member
           </BioSection>
           <BioSection>
-            <BioYear>2022 to present</BioYear>
+            <BioYear>2022 - Present</BioYear>
             President of programming club at school
           </BioSection>
         </Section>
@@ -181,14 +181,14 @@ const Home = () => {
 
           <SimpleGrid columns={[1, 2, 2]} gap={6}>
             <GridItem
-              href='https://incandescent-stardust-141f3a.netlify.app/posts/kharkiv'
+              href='https://johnsonafool.netlify.app/posts/kharkiv/'
               title='Kharkiv the Perfect World 2D'
               thumbnail={kharkiv_2d}
             >
               React, Redux, Redux Saga, DeckGL, Django, Docker
             </GridItem>
             <GridItem
-              href='https://incandescent-stardust-141f3a.netlify.app/posts/kharkiv' // TODO add netfliy intro here
+              href='https://johnsonafool.netlify.app/posts/kharkiv/'
               title='Kharkiv the Perfect World 3D'
               thumbnail={kharkiv}
             >
@@ -201,7 +201,11 @@ const Home = () => {
             >
               Fastapi, GraphQL, Tensorflow, Algorithm
             </GridItem>
-            <GridItem href='coming' title='Taiwan Island' thumbnail={island}>
+            <GridItem
+              href='https://johnsonafool.netlify.app/'
+              title='Taiwan Island'
+              thumbnail={island}
+            >
               React, Redux, DeckGL, Socket.io, Colyseus.js, Styled Components
             </GridItem>
           </SimpleGrid>
@@ -214,7 +218,7 @@ const Home = () => {
 
           <SimpleGrid columns={[1, 2, 2]} gap={6}>
             <GridItem
-              href='https://github.com/PaBaNaNa/netflix_project' // TODO add netfliy intro here ?
+              href='https://github.com/PaBaNaNa/netflix_project'
               title='Netflix Project'
               thumbnail={netflix}
             >
@@ -237,14 +241,18 @@ const Home = () => {
               Next JS, Three JS, Github Action, Tailwind CSS
             </GridItem>
             <GridItem
-              href='https://main--super-semifreddo-943d54.netlify.app/'
-              title='Johnsons Porttfolio'
+              href='https://johnsonafool.netlify.app/posts/website/'
+              title='Johnsons Portfolio'
               thumbnail={portfolio}
             >
-              Astro, Netlify, mdx,
+              Astro, Netlify, Tailwind CSS, mdx, Git Flow
             </GridItem>
-            <GridItem href='coming' title='Arduino' thumbnail={car}>
-              C, Arduino
+            <GridItem
+              href='https://johnsonafool.netlify.app/posts/pbl/'
+              title='Arduino'
+              thumbnail={car}
+            >
+              Self Moving Car
             </GridItem>
             <GridItem
               href='coming'
@@ -274,7 +282,7 @@ const Home = () => {
               title='Event Final Picture'
               thumbnail={welcome}
             >
-              Organize and host welcoming event with 70+ people in sucess
+              Organize and host welcoming event with 70+ people in success
             </GridItem>
             <GridItem
               href='https://line.me/R/ti/p/%40249zwxoo'
@@ -307,11 +315,11 @@ const Home = () => {
               Explore different filed and make friends.
             </GridItem>
             <GridItem
-              title='Embrace Chanllenge and New Stuff'
+              title='Embrace Challenge and New Stuff'
               thumbnail={taichi}
-              href='./coming'
+              href='https://www.facebook.com/openhci/photos/pb.100057624692945.-2207520000./5433225003405588/?type=3'
             >
-              Eager to learn new tech and share knowlege to others, especially
+              Eager to learn new tech and share knowledge to others, especially
               in coding and programming.
             </GridItem>
             <GridItem title='Travel' thumbnail={travel} href='./coming'>

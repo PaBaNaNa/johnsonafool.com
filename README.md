@@ -7,3 +7,4 @@
 - [x] add renovator bot
 - [ ] add test include e2e, unit, integraion, storybook etc
 - [ ] renew some link
+- [ ] resolve hydration error shown on dev

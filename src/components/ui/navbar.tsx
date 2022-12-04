@@ -120,7 +120,7 @@ const Navbar = (props: any) => {
           </LinkItem>
           <LinkItem
             target='_blank'
-            href='https://drive.google.com/file/d/1aiK-gcqbuPGI3XfNSwpv_spaP6p0myk-/view?usp=share_link'
+            href='https://drive.google.com/file/d/1agXDMjrCHdBQx9SbafHHXY1TSiLsv9VZ/view?usp=share_link'
             path={path}
             display='inline-flex'
             alignItems='center'
@@ -128,7 +128,7 @@ const Navbar = (props: any) => {
             pl={2}
           >
             <IoBook />
-            CV Resumé
+            CV Resume
           </LinkItem>
           <NextLink href='/' locale={router.locale === 'es' ? 'en' : 'es'}>
             <Button colorScheme='teal' size='xs'>
