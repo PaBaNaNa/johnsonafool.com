@@ -40,4 +40,6 @@ yarn-error.log*
 next-env.d.ts
 
 # addtional addon files by myself
-test.md
+cv.pdf
+pdf.tsx
+
