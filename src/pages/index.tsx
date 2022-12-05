@@ -9,7 +9,6 @@ import {
 } from '@chakra-ui/react';
 import axios from 'axios';
 import Image from 'next/image';
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { useEffect, useState } from 'react';
 
 import Layout from '@/components/layout/Layout';
@@ -370,10 +369,10 @@ const Home = () => {
   );
 };
 
-export const getStaticProps = async ({ locale }: any) => ({
-  props: {
-    ...(await serverSideTranslations(locale, ['common'])),
-  },
-});
+// export const getStaticProps = async ({ locale }: any) => ({
+//   props: {
+//     ...(await serverSideTranslations(locale, ['common'])),
+//   },
+// });
 
 export default Home;
